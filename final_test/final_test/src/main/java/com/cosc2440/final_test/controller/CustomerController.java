@@ -20,7 +20,7 @@ public class CustomerController {
     public List<Customer> get(@RequestParam(value = "name", required = false) String name,
                               @RequestParam(value = "phoneNumber", required = false) String phoneNumber,
                               @RequestParam(value = "order", required = false) String order) {
-        return customerService.search(name, phoneNumber, order);
+        return customerService.get(name, phoneNumber, order);
     }
 
     @RequestMapping(path = "/customer", method = RequestMethod.POST)

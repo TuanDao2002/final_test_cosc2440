@@ -16,7 +16,7 @@ public class ItemOrder {
     private Integer id;
 
     @Column
-    private double totalPrice;
+    private double totalPrice = 0;
 
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
