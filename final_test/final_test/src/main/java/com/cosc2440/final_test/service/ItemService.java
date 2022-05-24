@@ -49,7 +49,7 @@ public class ItemService {
         }
 
         if (name != null) {
-            items.removeIf(item -> !(item.getName() == name));
+            items.removeIf(item -> !(item.getName().equals(name)));
         }
 
         if (price != null) {
