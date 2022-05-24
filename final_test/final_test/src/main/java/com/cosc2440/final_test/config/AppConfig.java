@@ -40,7 +40,7 @@ public class AppConfig {
         LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
         sessionFactoryBean.setDataSource(dataSource);
         sessionFactoryBean.setHibernateProperties(properties);
-        sessionFactoryBean.setPackagesToScan("cosc2440.asm2.taxi_company.model");
+        sessionFactoryBean.setPackagesToScan("com.cosc2440.final_test.model");
         return  sessionFactoryBean;
     }
 }
